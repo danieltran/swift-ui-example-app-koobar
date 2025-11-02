@@ -58,7 +58,10 @@ private struct WelcomeContentView : View {
   
   var body: some View {
     VStack {
-      Image("roo_logo").background(Color("BackgroundColor"))
+      Spacer()
+      Image("roo_logo")
+        .background(Color("BackgroundColor"))
+      Spacer()
       SignInSignUpButtons(koober: koober)
     }
     .background(Color("BackgroundColor"))

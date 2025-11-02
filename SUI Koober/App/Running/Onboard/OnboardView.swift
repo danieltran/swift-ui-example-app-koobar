@@ -33,7 +33,7 @@ struct OnboardView : View {
   @ObservedObject var koober: Koober
   
   var body: some View {
-    NavigationView {
+    NavigationStack {
       WelcomeView(koober: koober)
     }
   }
