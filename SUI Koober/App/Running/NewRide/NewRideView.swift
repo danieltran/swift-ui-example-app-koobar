@@ -31,23 +31,30 @@ import SwiftUI
 /// This view is presented if a user is signed in and ready to start a new ride.
 struct NewRideView : View {
   let userSession: UserSession
+
+  @State private var showDropOffSelection = false
   
   var body: some View {
-    ZStack(alignment: .top) {
-      MapView()
-      HStack(alignment: .bottom) {
-        Spacer()
-        Image(systemName: "person")
-          .font(.title)
-          .padding(.all)
+      NavigationStack {
+          ZStack(alignment: .top) {
+              MapView()
+              HStack(alignment: .bottom) {
+                  Spacer()
+                  Image(systemName: "person")
+                      .font(.title)
+                      .padding(.all)
+              }
+              WhereToButton(action: goToDropoffLocationSelectionScreen)
+                  .padding(.top, 60)
+          }
+          .navigationDestination(isPresented: $showDropOffSelection) {
+              SelectDropoffLocationView()
+          }
       }
-      WhereToButton(action: goToDropoffLocationSelectionScreen)
-        .padding(.top, 60)
-    }
   }
   
   func goToDropoffLocationSelectionScreen() {
-    // TODO: Navigate to dropoff location selection.
+      showDropOffSelection = true
   }
 }
 
