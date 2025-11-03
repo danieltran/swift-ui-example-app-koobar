@@ -29,6 +29,7 @@
 		2854EE592310D11E004F9E0C /* RunningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F399B22AC86E2004D2B76 /* RunningView.swift */; };
 		2854EE5A2310D12C004F9E0C /* LaunchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F399922AC8682004D2B76 /* LaunchingView.swift */; };
 		2854EE5B2310D134004F9E0C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F399522AC857F004D2B76 /* MainView.swift */; };
+		96BAD6632EB832B30008C14A /* NewRideRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BAD6622EB832B30008C14A /* NewRideRoute.swift */; };
 		9F9F397E22AC7C0F004D2B76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9F397D22AC7C0F004D2B76 /* Assets.xcassets */; };
 		9F9F398122AC7C0F004D2B76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9F398022AC7C0F004D2B76 /* Preview Assets.xcassets */; };
 		9F9F398422AC7C0F004D2B76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9F398222AC7C0F004D2B76 /* LaunchScreen.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		60C329EA22BDDDBA007A1C71 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		96BAD6622EB832B30008C14A /* NewRideRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideRoute.swift; sourceTree = "<group>"; };
 		9F273B7922BB24C800FA6E23 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		9F35695222ADC12E007FA94C /* SignInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
 		9F4451FE22C97BB100D6DA78 /* EnjoyTheRideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnjoyTheRideView.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				9F9F399722AC85C5004D2B76 /* NewRideView.swift */,
+				96BAD6622EB832B30008C14A /* NewRideRoute.swift */,
 				9F7A842222C80582001FF475 /* SelectRideOptionView.swift */,
 				9F7A841A22C7EA64001FF475 /* LocateUser */,
 				9F7A841F22C7F626001FF475 /* SelectDropoffLocation */,
@@ -343,6 +346,7 @@
 				2854EE462310C0D4004F9E0C /* ErrorMessage.swift in Sources */,
 				2854EE492310C285004F9E0C /* FullscreenView.swift in Sources */,
 				2854EE5A2310D12C004F9E0C /* LaunchingView.swift in Sources */,
+				96BAD6632EB832B30008C14A /* NewRideRoute.swift in Sources */,
 				2854EE592310D11E004F9E0C /* RunningView.swift in Sources */,
 				9FE8C31222ADBF10000F4F50 /* UserAuthenticationRemoteAPI.swift in Sources */,
 			);

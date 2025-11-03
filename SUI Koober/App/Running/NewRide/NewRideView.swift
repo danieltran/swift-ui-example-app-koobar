@@ -32,10 +32,10 @@ import SwiftUI
 struct NewRideView : View {
   let userSession: UserSession
 
-  @State private var showDropOffSelection = false
-  
+  @State private var navigationPath = NavigationPath()
+
   var body: some View {
-      NavigationStack {
+      NavigationStack(path: $navigationPath) {
           ZStack(alignment: .top) {
               MapView()
               HStack(alignment: .bottom) {
@@ -47,14 +47,17 @@ struct NewRideView : View {
               WhereToButton(action: goToDropoffLocationSelectionScreen)
                   .padding(.top, 60)
           }
-          .navigationDestination(isPresented: $showDropOffSelection) {
-              SelectDropoffLocationView()
+          .navigationDestination(for: NewRideRoute.self) { route in
+              switch route {
+              case .selectDropoffLocation:
+                  SelectDropoffLocationView()
+              }
           }
       }
   }
-  
+
   func goToDropoffLocationSelectionScreen() {
-      showDropOffSelection = true
+      navigationPath.append(NewRideRoute.selectDropoffLocation)
   }
 }
 
