@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,9 +37,20 @@
 		9FE8C31222ADBF10000F4F50 /* UserAuthenticationRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8C31122ADBF10000F4F50 /* UserAuthenticationRemoteAPI.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		96BAD66C2EBB662C0008C14A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9F396C22AC7C0E004D2B76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F9F397322AC7C0E004D2B76;
+			remoteInfo = "SUI Koober";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		60C329EA22BDDDBA007A1C71 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		96BAD6622EB832B30008C14A /* NewRideRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRideRoute.swift; sourceTree = "<group>"; };
+		96BAD6682EBB662B0008C14A /* SUI KooberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SUI KooberTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F273B7922BB24C800FA6E23 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		9F35695222ADC12E007FA94C /* SignInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
 		9F4451FE22C97BB100D6DA78 /* EnjoyTheRideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnjoyTheRideView.swift; sourceTree = "<group>"; };
@@ -70,7 +81,18 @@
 		9FE8C31122ADBF10000F4F50 /* UserAuthenticationRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationRemoteAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		96BAD6692EBB662C0008C14A /* SUI KooberTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "SUI KooberTests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		96BAD6652EBB662B0008C14A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F9F397122AC7C0E004D2B76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				9F9F397622AC7C0E004D2B76 /* SUI Koober */,
+				96BAD6692EBB662C0008C14A /* SUI KooberTests */,
 				9F9F397522AC7C0E004D2B76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				9F9F397422AC7C0E004D2B76 /* SUI Koober.app */,
+				96BAD6682EBB662B0008C14A /* SUI KooberTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,6 +280,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		96BAD6672EBB662B0008C14A /* SUI KooberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96BAD66E2EBB662C0008C14A /* Build configuration list for PBXNativeTarget "SUI KooberTests" */;
+			buildPhases = (
+				96BAD6642EBB662B0008C14A /* Sources */,
+				96BAD6652EBB662B0008C14A /* Frameworks */,
+				96BAD6662EBB662B0008C14A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96BAD66D2EBB662C0008C14A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				96BAD6692EBB662C0008C14A /* SUI KooberTests */,
+			);
+			name = "SUI KooberTests";
+			packageProductDependencies = (
+			);
+			productName = "SUI KooberTests";
+			productReference = 96BAD6682EBB662B0008C14A /* SUI KooberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9F9F397322AC7C0E004D2B76 /* SUI Koober */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F9F398822AC7C0F004D2B76 /* Build configuration list for PBXNativeTarget "SUI Koober" */;
@@ -279,10 +326,14 @@
 		9F9F396C22AC7C0E004D2B76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Razeware;
 				TargetAttributes = {
+					96BAD6672EBB662B0008C14A = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = 9F9F397322AC7C0E004D2B76;
+					};
 					9F9F397322AC7C0E004D2B76 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -302,11 +353,19 @@
 			projectRoot = "";
 			targets = (
 				9F9F397322AC7C0E004D2B76 /* SUI Koober */,
+				96BAD6672EBB662B0008C14A /* SUI KooberTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		96BAD6662EBB662B0008C14A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F9F397222AC7C0E004D2B76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +379,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		96BAD6642EBB662B0008C14A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9F9F397022AC7C0E004D2B76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +420,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		96BAD66D2EBB662C0008C14A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F9F397322AC7C0E004D2B76 /* SUI Koober */;
+			targetProxy = 96BAD66C2EBB662C0008C14A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		9F9F398222AC7C0F004D2B76 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -366,6 +440,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		96BAD66F2EBB662C0008C14A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.testapp.SUI-KooberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SUI Koober.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SUI Koober";
+			};
+			name = Debug;
+		};
+		96BAD6702EBB662C0008C14A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.testapp.SUI-KooberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SUI Koober.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SUI Koober";
+			};
+			name = Release;
+		};
 		9F9F398622AC7C0F004D2B76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -523,6 +652,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		96BAD66E2EBB662C0008C14A /* Build configuration list for PBXNativeTarget "SUI KooberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96BAD66F2EBB662C0008C14A /* Debug */,
+				96BAD6702EBB662C0008C14A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9F9F396F22AC7C0E004D2B76 /* Build configuration list for PBXProject "SUI Koober" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
